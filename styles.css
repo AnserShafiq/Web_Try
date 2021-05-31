@@ -347,7 +347,7 @@ nav .menu-btn,nav .menu-icon{
 #client-section h3{
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 1000;
 }
 
@@ -360,17 +360,20 @@ nav .menu-btn,nav .menu-icon{
 }
 .client{
     background-color: var(--white-main-color);
-    height: auto;
+    height: 300px;
     width: auto;
     border-radius: 10%;
     display: grid;
+    grid-template-columns: min-content;
     align-items: center;
     place-items:center;
     margin:auto;
     padding:2% 5%;
 }
+.c-btn{
+    align-self: flex-end;;
+}
 .client img{
-    
     padding:0%;
     height:100px;
 }
@@ -381,11 +384,11 @@ nav .menu-btn,nav .menu-icon{
     margin:0px;
     padding:0px;
     text-align: center;
-    /* position: center; */
+    box-sizing: content-box;
+    position: center; 
     color:var(--dark-grey-color);
     font-size: 0.9rem;
 }
-
 /* Contacts */
 #contact {
     display: flex;
