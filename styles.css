@@ -363,9 +363,8 @@ nav .menu-btn,nav .menu-icon{
     height: 300px;
     width: auto;
     border-radius: 10%;
-    display: flex;
-/*     grid-template-columns: min-content; */
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: min-content;
     align-items: center;
     place-items:center;
     margin:auto;
@@ -382,7 +381,7 @@ nav .menu-btn,nav .menu-icon{
     border-radius: 50%;
 }
 .client p{
-    margin:80%;
+    margin:0px;
     padding:0px;
     text-align: center;
     box-sizing: content-box;
