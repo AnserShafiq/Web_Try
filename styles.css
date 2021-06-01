@@ -367,7 +367,7 @@ nav .menu-btn,nav .menu-icon{
     grid-template-columns: min-content;
     align-items: center;
     place-items:center;
-    margin:auto;
+    margin:10px;
     padding:2% 5%;
 }
 .c-btn{
