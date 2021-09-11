@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     
+    <!-- Bootstrap 4.3 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap" rel="stylesheet">
@@ -32,7 +35,7 @@
         <nav>
             
              <!--Logo  -->
-            <a href="#">
+            <a href="#main">
                 <h1 class="logo-heading">
                     iam<span class=name >Anser</span>
                 </h1>
@@ -43,12 +46,12 @@
                 <li><a href= "#home">Home</a></li>
                 <li><a href= "#skills">Skills</a></li>
                 <li><a href= "#my-projects">Project</a></li>
-                <li><a href= "#clients">Clients</a></li>
+                <li><a href= "#client-section">Clients</a></li>
                 <li><a href= "#contact">Contact</a></li>
             </ul>
 
             <!-- Get in touch button -->
-            <a href="#" class="get-in-touch"> Get In Touch </a>
+            <a href="#contact" class="get-in-touch"> Get In Touch </a>
 
         </nav>
 
@@ -59,9 +62,9 @@
         <!-- Adding Code of main section -->
         
         <!-- Left Div -->
-        <div class="model">
+        <div class="model" id='home'>
             <img class=img alt="Anser Shafiq" src="/Images/pp.jpg">
-            <div class="social-contact s-box-icon">
+            <div class="social-contact link-box-icon">
                 <a href="https://github.com/AnserShafiq" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
@@ -98,48 +101,60 @@
         <div class=skill-text>
 
             <div class=skill-heading>
-                <span>My Skills</span>
-                <h2>My Expertise</h2>
+                <h2>My Skills</h2>
             </div>
 
             <div class=s-box-container>
 
                 <!-- Skill Box 1 -->
                 <div class=skill-box>
-
                     <div class=s-box-icon>
                         <i class="fab fa-html5"></i>
+                        <div class="skill-box-text">
+                            <strong>HTML</strong>
+                        </div>
                     </div>
-                    <div class="skill-box-text">
-                        <strong>HTML</strong>
-                        <p>We will write description of skill.</p>
+                    <div class="progress" style="margin-top: -10px;margin-left: 43px;">
+                        <div class="progress-bar " role="progressbar" style="width: 95%;background-color:rgb(77, 39, 35);" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-
                 </div>
                 <!-- Skill box 2 -->
                 <div class=skill-box>
-
                     <div class=s-box-icon>
                         <i class="fab fa-css3"></i>
+                        <div class="skill-box-text">
+                            <strong>CSS</strong>
+                        </div>
                     </div>
-                    <div class="skill-box-text">
-                        <strong>CSS</strong>
-                        <p>We will write description of skill.</p>
+                    <div class="progress" style="margin-top: -10px;margin-left: 43px;">
+                        <div class="progress-bar " role="progressbar" style="width: 90%;background-color:rgb(77, 39, 35);" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-
                 </div>
                 <!-- Skill box 3 -->
                 <div class=skill-box>
-
                     <div class=s-box-icon>
                         <i class="fab fa-python"></i>
+                        <div class="skill-box-text">
+                            <strong>Python</strong>
+                        </div>
                     </div>
-                    <div class="skill-box-text">
-                        <strong>Python</strong>
-                        <p>We will write description of skill.</p>
+                    <div class="progress" style="margin-top: -10px;margin-left: 43px;">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;background-color:rgb(77, 39, 35);" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-
                 </div>
+                <!-- Skill box 4 -->
+                <div class=skill-box>
+                    <div class=s-box-icon>
+                        <i class="fab fa-js"></i>
+                        <div class="skill-box-text">
+                            <strong>JavaScript</strong>
+                        </div>
+                    </div>
+                    <div class="progress" style="margin-top: -10px;margin-left: 43px;">
+                        <div class="progress-bar " role="progressbar" style="width: 80%;background-color:rgb(77, 39, 35);" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>                
+                
             </div>
 
 
@@ -154,46 +169,51 @@
     <!-- My Projects -->
     <section id="my-projects">
         <!-- Add Projects -->
-        <div class="recent-heading">
-            <span>Showcase</span>
-            <h3>My Projects</h3>
+        <div>
+            <h3  class="recent-heading">My Projects</h3>
         </div>
 
         <div class="project-showcase">
             <!-- Project1 -->
-            <div class="project project1">
-                <div id=hide>
-                    <p class=project-text>Description of project</p>
-                    <a href="#" class=project-btn>Visit Website</a>
+            <div class="project">
+                <h4>Giardino Restaurant</h4>
+                <div class="project1">
+                    <div id=hide>
+                        <p class=project-text>Created Using C++, Html and Bootstrap.</p>
+                        <a href="https://giardino-restaurant-webpage.netlify.app/" class=project-btn>Visit Website</a>
+                    </div>
                 </div>
 
             </div>
             <!-- Project2 -->
-            <div class="project project2">
-                <div id=hide>
-                    <p class=project-text>Description of project</p>
-                    <a href="#" class=project-btn>Visit Website</a>
+            <div class="project">
+                <h4>Weather Web App</h4>
+                <div class="project2">
+                    <div id=hide>
+                        <p class=project-text>Created Using C++, Html, JavaScript and Bootstrap.</p>
+                        <a href="https://weather-app-by-anser.netlify.app/" class=project-btn>Visit Website</a>
+                    </div>
                 </div>
 
             </div>
             <!-- Project3 -->
-            <div class="project project3">
-                <div id=hide>
-                    <p class=project-text>Description of project</p>
-                    <a href="#" class=project-btn>Visit Website</a>
+            <div class="project">
+                <h4>BookMarks Web App</h4>
+                <div class="project3">
+                    <div id=hide>
+                        <p class=project-text>Created Using C++, Html, JavaScript and Bootstrap.</p>
+                        <a href="https://bookmarks-app-by-anser.netlify.app/" class="project-btn">Visit Website</a>
+                    </div>
                 </div>
 
             </div>
         </div>
-        <a href="#" class="recent-btn">See More Projects</a>
+        <!-- <a href="#" class="recent-btn">See More Projects</a> -->
     </section>
 
     <!-- Client Section -->
     <section id="client-section">
         <!-- Addind Client Section Code -->
-        <!-- <img src="Images/istockphoto-887755698-612x612.jpg" alt="client-section"> -->
-        <h4>Comments</h4>
-       
         <h3><strong>Clients Testimonial</strong></h3>
        
         <div class="dashboard">
@@ -206,13 +226,13 @@
             <div class="client">
                 <img src="Images/girl.png" alt="client" class=pics>
                 <img src="Images/stars.png" alt="rating-star">
-                <p cl>He is a Good Teacher.He teaches evrything properly .</p>
+                <p cl>He is a Good Programmer.He Manages evrything properly .</p>
                 <a href="#" class="recent-btn c-btn">Read More</a>
             </div>
             <div class="client">
                 <img src="Images/uncle.png" alt="client" class=pics>
                 <img src="Images/stars.png" alt="rating-star">
-                <p>And is a Good leader..........</p>
+                <p>And is a Good Team Performer..........</p>
                 <a href="#" class="recent-btn c-btn">Read More</a>
             </div>
             
@@ -227,8 +247,8 @@
         <img src="/Images/contact.jpg" alt="contact-img">
         <h3>Let's work on <span>projects</span> together</h3>
         <div class="contact-input">
-            <input type="email" placeholder="john.doe@thedevnation.com">
-            <a href='#'>Let's connect</a>
+            <input type="email" placeholder="ansershafiq@gmail.com">
+            <!-- <a href='#'>Let's connect</a> -->
         </div>
     </section>
 
@@ -237,6 +257,9 @@
         <p>iamANSER</p>
         <p>CopyRight 2021 - Anser Shafiq</p>
     </footer>
-
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

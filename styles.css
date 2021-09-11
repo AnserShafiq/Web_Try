@@ -28,7 +28,7 @@ ul {
     list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
     color:black;
 }
@@ -43,13 +43,11 @@ nav{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    /* box-shadow: width height brightness rgba(red,green,blue,opacity) */
     box-shadow: 5px 10px 30px rgba(0,0,0,0.1);
     position:fixed;
     top:0;
     left:0;
     width:100%;
-    /* To Keep the nav at top. */
     z-index:1;
     background-color:var(--white-main-color);
 }
@@ -71,8 +69,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    /* To access the variables of root use: var(variable-name) */
     background-color: var(--main-bg-color);
+    text-decoration: none;
     color:white;
     border-radius: 5px;
 }
@@ -81,12 +79,18 @@ nav ul li a:hover{
     font-weight:500;
     font-size:0.9em;
     border-bottom: 2px solied var(--main-bg-color);
-
+}
+.get-in-touch:hover{
+    color:var(--dark-grey-color);
 }
 .logo-heading{
     font-weight:300;
     font-size:1.5em;
     color:var(--dark-black);
+}
+.logo-heading:hover{
+    color: var(--drak-black);
+    text-decoration: underline;
 }
 .name{
     font-weight: 800;
@@ -109,7 +113,10 @@ nav .menu-btn,nav .menu-icon{
     top:50%;
     transform: translate(-50%,-50%);
 }
-
+.link-box-icon{
+    margin-right:12px;
+    display: flex;
+}
 .model{
     display: flex;
     justify-content: space-between;
@@ -166,6 +173,7 @@ nav .menu-btn,nav .menu-icon{
     align-items: center;
     width: 90%;
     margin: auto auto 50px auto;
+    
 }
 .skill-img{
     width:500px;
@@ -200,19 +208,20 @@ nav .menu-btn,nav .menu-icon{
 }
 .skill-box{
     display: flex;
-    margin:25px 0px;
+    flex-direction: column;
+    margin:50px 25px;
 }
 
 .s-box-icon{
     margin-right:12px;
+    display: flex;
+    flex-direction: row;
 }
 .s-box-icon i{
     width:40px;
     height:40px;
     background-color: var(--very-light-grey);
     border-radius: 50%;
-    /* display: grid;
-    place-items: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,9 +230,9 @@ nav .menu-btn,nav .menu-icon{
 .fab{
     color:var(--main-bg-color);
 }
-.s-boc-text strong{
+.skill-box-text strong{
     color:var(--dark-grey-color);
-    margin:0px;
+    margin:5px 10px 0;
     font-weight: 600;
     font-size: 0.9rem;
 }
@@ -234,43 +243,50 @@ nav .menu-btn,nav .menu-icon{
 
 /* Project Section */
 #my-projects{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: grid;
     place-items: center;
     width:90%;
-    margin:auto auto 50px auto;
+    margin:150px auto 50px auto;
 }
 
 .project-showcase{
     display: flex;
     width:90%;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 .project{
     width:300px;
-    height:200px;
+    height:230px;
     border-radius: 20px;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    margin: 30px 0px;
+    margin: 25px 0px;
 }
-
+.recent-heading{
+    font-size: 4rem;
+    font-weight: 800;
+    /* text-decoration: underline; */
+}
 .project1{
-    background-image: url(/Images/P1.png);
+    background-image: url(/Images/P1.JPG);
     background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .project2{
-    background-image: url(/Images/P1.png);
+    background-image: url(/Images/P2.JPG);
     background-size:contain;
-
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .project3{
-    background-image: url(/Images/P1.png);
+    background-image: url(/Images/P3.PNG);
     background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .project #hide{
     background-color:var(--white-main-color);
@@ -280,7 +296,7 @@ nav .menu-btn,nav .menu-icon{
     display: grid;
     place-items: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 15px;
     opacity: 100%;
     visibility: hidden;
 }
@@ -310,10 +326,9 @@ nav .menu-btn,nav .menu-icon{
 }
 
 .project-btn:hover {
-    color: var(--white-main-color);
-    background-color: var(--black-color);
+    color: var(--dark-grey-color);
     border: 1px solid var(--main-bg-color);
-    box-shadow: 0px 5px 15px rgba(145,92,182,0.4)
+    box-shadow: 0px 5px 15px rgba(145,92,182,0.4);
 }
 
 .recent-btn {
@@ -335,6 +350,7 @@ nav .menu-btn,nav .menu-icon{
     background-size: 100%;
     background-repeat: no-repeat;
     margin:auto;
+    padding-top: 50px;
 }
 #client-section h4{
     display:flex;
@@ -360,7 +376,7 @@ nav .menu-btn,nav .menu-icon{
 }
 .client{
     background-color: var(--white-main-color);
-    height: 300px;
+    height: 400px;
     width: auto;
     border-radius: 10%;
     display: grid;
@@ -371,7 +387,11 @@ nav .menu-btn,nav .menu-icon{
     padding:2% 5%;
 }
 .c-btn{
-    align-self: flex-end;;
+    align-self: flex-end;
+}
+.c-btn:hover{
+    text-decoration: none;
+    color: #f0f0f0;
 }
 .client img{
     padding:0%;
